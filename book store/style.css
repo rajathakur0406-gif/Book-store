@@ -1,0 +1,390 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #D4AF37;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    margin-right: 20px; /* Add space between logo and title */
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px;
+    color: #D4AF37;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #D4AF37;
+    color: #121212;
+}
+
+.nav li a i {
+    margin-right: 8px;
+}
+
+.page-container {
+    display: flex;
+}
+
+.departments-section {
+    width: 200px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-right: 1px solid #333;
+}
+
+.departments-section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.departments-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.departments-section li a {
+    display: block;
+    padding: 10px;
+    color: #E0E0E0;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.departments-section li a i {
+    margin-right: 10px;
+    width: 20px;
+    transition: transform 0.4s ease;
+}
+
+.departments-section li a:hover {
+    background-color: #D4AF37;
+    color: #121212;
+}
+
+.departments-section li a:hover i {
+    transform: rotate(360deg);
+}
+
+.container {
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('hero-banner.jpg'); /* Add your hero banner image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    color: #E0E0E0;
+    background-color: #2a2a2a;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #D4AF37;
+    color: #121212;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.shop-now-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-books {
+    margin-top: 40px;
+}
+
+.featured-books h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.book-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-card .price {
+    font-weight: bold;
+    color: #D4AF37;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #333;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 250px); /* Adjust based on header/footer height */
+}
+
+.login-form {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.forgot-password a {
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+/* Registration Page Styles */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 250px); /* Adjust based on header/footer height */
+}
+
+.registration-form {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    width: 100%;
+    max-width: 500px;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-form input,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+.gender-options {
+    margin-bottom: 15px;
+}
+
+.gender-options input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Catalogue Page Styles */
+.book-catalogue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-catalogue-table th,
+.book-catalogue-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.book-catalogue-table th {
+    background-color: #2a2a2a;
+    font-weight: bold;
+}
+
+.book-catalogue-table tbody tr:hover {
+    background-color: #3a3a3a;
+}
+
+.catalogue-book-img {
+    max-width: 60px;
+    height: auto;
+}
+
+/* Cart Page Styles */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    background-color: #2a2a2a;
+}
+
+.product-col {
+    text-align: left;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-selector input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+}
